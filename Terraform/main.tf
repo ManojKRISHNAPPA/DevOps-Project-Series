@@ -18,7 +18,7 @@ resource "aws_instance" "admin" {
     tags = {
         Name = "Admin-server"
     }
-
+    user_data = file("server-script.sh")
 }
 
 
